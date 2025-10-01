@@ -1,0 +1,140 @@
+/* Contenedor principal - ajusta el tamaño aquí */
+.testimonials-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Título de la sección */
+.section-title {
+    color: #1e293b;
+    font-weight: 600;
+}
+
+/* Contenedor del slider */
+.slider-wrapper {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+/* Track del slider */
+.slider-track {
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+    gap: 30px;
+    margin-left: 10px;
+}
+
+/* Tarjetas de testimonio */
+.testimonial-card {
+    flex: 0 0 calc(33.333% - 20px);
+    /* 3 tarjetas en desktop */
+    background: white;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e2e8f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Imagen del usuario */
+.user-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 3px solid #f1f5f9;
+}
+
+/* Nombre del usuario */
+.user-name {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 8px;
+}
+
+/* Cargo/posición del usuario */
+.user-position {
+    font-size: 0.9rem;
+    color: #64748b;
+    margin-bottom: 20px;
+}
+
+/* Texto del testimonio */
+.testimonial-text {
+    color: #475569;
+    line-height: 1.6;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+/* Calificación con estrellas */
+.rating {
+    color: #fbbf24;
+    font-size: 1.2rem;
+    margin-top: auto;
+}
+
+/* Controles de navegación */
+.slider-controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.slider-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: white;
+    border: 1px solid #e2e8f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1.2rem;
+    color: #64748b;
+}
+
+.slider-btn:hover {
+    background: #3b82f6;
+    color: white;
+    border-color: #3b82f6;
+}
+
+
+.indicator.active {
+    background: #3b82f6;
+    transform: scale(1.2);
+}
+
+/* Responsive para tablets */
+@media (max-width: 992px) {
+    .testimonial-card {
+        flex: 0 0 calc(50% - 15px);
+        /* 2 tarjetas en tablets */
+    }
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+    .testimonials-container {
+        width: 95%;
+    }
+
+    .testimonial-card {
+        flex: 0 0 calc(100% - 10px);
+        /* 1 tarjeta en móviles */
+    }
+
+    .section-title {
+        font-size: 1.6rem;
+    }
+}

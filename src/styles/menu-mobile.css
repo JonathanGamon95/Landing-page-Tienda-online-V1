@@ -1,0 +1,48 @@
+/* Botón abrir */
+.menu-btn {
+    font-size: 30px;
+    cursor: pointer;
+    padding: 15px;
+    border: none;
+    background: none;
+}
+
+/* Contenedor del menú */
+.menu {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: #333;
+    color: #fff;
+    overflow-y: auto;
+    transition: left 0.3s ease;
+    padding-top: 60px;
+}
+
+.menu.open {
+    left: 0;
+}
+
+.menu a,
+.menu .nav {
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    width: 100%;
+    text-decoration: none;
+    border-bottom: 1px solid #444;
+}
+
+/* Botón cerrar */
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 25px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #fff;
+}

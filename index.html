@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/output.css">
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- css local -->
+    <link rel="stylesheet" href="./src/styles/gallery-products.css">
+    <link rel="stylesheet" href="./src/styles/general-styles.css">
+    <link rel="stylesheet" href="./src/styles/menu-mobile.css">
+    <link rel="stylesheet" href="./src/styles/slider-style.css">
+    <title>Bilba</title>
+</head>
+
+<body>
+    <header class="
+    grid grid-cols-2 sm:grid-cols-3 grid-rows-1
+    w-full p-2
+    fixed top-0 sm:static
+    z-3">
+        <div class="
+        cont-logo">
+            <h4 class="text-2xl sm:text-4xl">Bilba</h4>
+            <p>Bolsas LLenas de color</p>
+        </div>
+
+        <nav class="
+        hidden sm:flex items-center justify-end sm:justify-center gap-4">
+            <button id="home" onclick="changeSections(products_section)" class="nav">Tienda</button>
+            <button id="about" class="nav">Acerca</button>
+            <button id="faq" onclick="changeSections(questions_section)" class="nav">FAQ</button>
+            <button id="contact" onclick="changeSections(contact_section)" class="nav">Contacto</button>
+        </nav>
+
+        <div class="
+        social-networds-and-login
+        hidden sm:flex items-center justify-center gap-2">
+            <a href="./login.html" target="_blank"><button>Iniciar Sesion</button></a>
+            <a href="https://www.facebook.com/?locale=es_LA" target="_blank"><span><i
+                        class="bi bi-facebook text-xl cursor-pointer"></i></span></a>
+            <a href="https://www.instagram.com/" target="_blank"><span><i
+                        class="bi bi-instagram text-xl cursor-pointer"></i></span></a>
+            <a href="https://ar.pinterest.com/" target="_blank"><span><i
+                        class="bi bi-pinterest text-xl cursor-pointer"></i></span></a>
+        </div>
+
+        <span class="
+        menu-btn
+        sm:hidden
+        flex items-center justify-end" onclick="abrirMenu()"><i class="bi bi-three-dots-vertical"></i></span>
+    </header>
+
+
+
+
+
+
+
+    <!-- contenedor padre -->
+    <section id="container_section" class="
+    min-h-[90vh]">
+    <br><br><br>
+        <!-- productos -->
+        <div id="products_section" class="
+        contenedor-galeria">
+            <br>
+            <div class="sm:flex sm:justify-between">
+                <h1 class="text-2xl">Nuestros Bolsos</h1>
+                <br class="sm:hidden">
+                <div class="flex bg-white">
+                    <input class="px-2 w-full" type="text" placeholder="Buscar..">
+                    <button class="px-2"><i class="bi bi-search"></i></button>
+                </div>
+            </div>
+            <br>
+            <div class="galeria">
+
+                <!-- Producto 1 -->
+                <div class="producto">
+                    <img src="./src/assest/imagen/products/51y-mpUpMkL._AC_SY575_.jpg" alt="Producto 1">
+                    <div class="info">
+                        <h3>Bolsos de lujo para mujer</h3>
+                        <p>bolsas de gran capacidad, textura premium de cuero sólido, bolsos elegantes de mensajero para
+                            mujer</p>
+                        <span class="precio">$25.00</span>
+                    </div>
+                </div>
+
+                <!-- Producto 2 -->
+                <div class="producto">
+                    <img src="./src/assest/imagen/products/61IA2D4uSbL._AC_SY575_.jpg" alt="Producto 2">
+                    <div class="info">
+                        <h3>Bolsos de lujo para mujer</h3>
+                        <p>bolsas de gran capacidad, textura premium de cuero sólido, bolsos elegantes de mensajero para
+                            mujer</p>
+                        <span class="precio">$40.00</span>
+                    </div>
+                </div>
+
+                <!-- Producto 3 -->
+                <div class="producto">
+                    <img src="./src/assest/imagen/products/81irZKcYLvL._AC_SY575_.jpg" alt="Producto 3">
+                    <div class="info">
+                        <h3>Bolsos de lujo para mujer</h3>
+                        <p>bolsas de gran capacidad, textura premium de cuero sólido, bolsos elegantes de mensajero para
+                            mujer</p>
+                        <span class="precio">$30.00</span>
+                    </div>
+                </div>
+
+                <!-- Producto 4 -->
+                <div class="producto">
+                    <img src="./src/assest/imagen/products/51y-mpUpMkL._AC_SY575_.jpg" alt="Producto 4">
+                    <div class="info">
+                        <h3>Bolsos de lujo para mujer</h3>
+                        <p>bolsas de gran capacidad, textura premium de cuero sólido, bolsos elegantes de mensajero para
+                            mujer</p>
+                        <span class="precio">$55.00</span>
+                    </div>
+                </div>
+
+
+
+
+                <!-- Producto 5 -->
+                <div class="producto">
+                    <img src="./src/assest/imagen/products/51y-mpUpMkL._AC_SY575_.jpg" alt="Producto 5">
+                    <div class="info">
+                        <h3>Bolsos de lujo para mujer</h3>
+                        <p>bolsas de gran capacidad, textura premium de cuero sólido, bolsos elegantes de mensajero para
+                            mujer</p>
+                        <span class="precio">$25.00</span>
+                    </div>
+                </div>
+
+                <!-- Producto 6 -->
+                <div class="producto">
+                    <img src="./src/assest/imagen/products/61IA2D4uSbL._AC_SY575_.jpg" alt="Producto 6">
+                    <div class="info">
+                        <h3>Bolsos de lujo para mujer</h3>
+                        <p>bolsas de gran capacidad, textura premium de cuero sólido, bolsos elegantes de mensajero para
+                            mujer</p>
+                        <span class="precio">$40.00</span>
+                    </div>
+                </div>
+
+                <!-- Producto 7 -->
+                <div class="producto">
+                    <img src="./src/assest/imagen/products/81irZKcYLvL._AC_SY575_.jpg" alt="Producto 7">
+                    <div class="info">
+                        <h3>Bolsos de lujo para mujer</h3>
+                        <p>bolsas de gran capacidad, textura premium de cuero sólido, bolsos elegantes de mensajero para
+                            mujer</p>
+                        <span class="precio">$30.00</span>
+                    </div>
+                </div>
+
+                <!-- Producto 8 -->
+                <div class="producto">
+                    <img src="./src/assest/imagen/products/51y-mpUpMkL._AC_SY575_.jpg" alt="Producto 8">
+                    <div class="info">
+                        <h3>Bolsos de lujo para mujer</h3>
+                        <p>bolsas de gran capacidad, textura premium de cuero sólido, bolsos elegantes de mensajero para
+                            mujer</p>
+                        <span class="precio">$55.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- seccion preguntas frecuentes -->
+        <div id="questions_section" class="
+        max-w-[800px]
+        p-[20] mx-2 my-4 sm:m-auto
+        box-border
+        hidden">
+            <br>
+            <h1 class="text-2xl">Preguntas mas frecuentes</h1>
+            <br>
+            <h2>¿Tienes alguna duda? Aquí encontrarás respuestas a lo que más nos preguntan.</h2>
+            <br>
+            <div class="flex gap-2">
+                <button id="orders_button" onclick="changeOfSection(orders_section)"
+                    class="buttom-faq rounded-md">Encargo</button>
+                <button id="return_button" onclick="changeOfSection(return_section)"
+                    class="buttom-faq rounded-md">Devolucion</button>
+            </div>
+            <br>
+
+            <div id="container_questions_section">
+                <div id="orders_section">
+                    <details class="rounded-md bg-white">
+                        <summary class="text-2xl"><i class="bi bi-cart-check-fill icon-questions"> </i>Encargos
+                        </summary>
+                        <br>
+                        <div class="flex flex-col">
+                            <p class="note-questions">Puedes encargar el servicio de manera rápida y sencilla desde
+                                nuestra
+                                página web. Solo debes
+                                seleccionar el servicio que necesitas, hacer clic en el botón “Encargar/Contratar”,
+                                completar el
+                                formulario con tus datos y confirmar tu pedido. Una vez realizado, recibirás un correo
+                                de
+                                confirmación con todos los detalles y los pasos a seguir.</p>
+
+                        </div>
+                    </details>
+                    <br>
+                    <details class="rounded-md bg-white">
+                        <summary class="text-2xl"><i class="bi bi-truck icon-questions"></i> Envios</summary>
+                        <br>
+                        <div class="flex flex-col">
+                            <p class="note-questions">El tiempo de envío depende de tu ubicación y del tipo de servicio
+                                de
+                                entrega seleccionado. En
+                                general, los pedidos se procesan en un plazo de 24 a 48 horas hábiles, y la entrega
+                                suele
+                                tardar
+                                entre 3 y 7 días hábiles. Al finalizar tu compra, recibirás un número de seguimiento
+                                para
+                                que
+                                puedas
+                                consultar el estado de tu envío en todo momento.</p>
+                        </div>
+                    </details>
+                    <br>
+                    <details class="rounded-md bg-white">
+                        <summary class="text-2xl"><i class="bi bi-credit-card-2-back-fill icon-questions"></i> Metodos
+                            De
+                            Pagos</summary>
+                        <br>
+                        <div class="flex flex-col">
+                            <p class="note-questions">Se puede pagar con cualquier tarjeta de debito o credito, solo
+                                sigue
+                                los pasos de como hacer la
+                                compra, agrega tu tarjeta y hace la compra, la tranferencia se demorara hasta 24 horas
+                            </p>
+                        </div>
+                    </details>
+                </div>
+
+                <div id="return_section" class="hidden">
+                    <details class="rounded-md bg-white">
+                        <summary class="text-2xl"><i class="bi bi-arrow-return-left icon-questions"></i>
+                            Devoluciones</summary>
+                        <br>
+                        <div class="flex flex-col">
+                            <p class="note-questions">Puedes solicitar la evolución de tu compra de manera rápida y
+                                sencilla desde nuestra página web. Solo debes seleccionar el servicio que deseas
+                                actualizar, hacer clic en el botón “Solicitar Devolución”, completar el formulario con
+                                tus datos y detallar los cambios o mejoras que necesitas. Una vez enviado, recibirás un
+                                correo de confirmación con todos los detalles y los pasos a seguir para que tu compra
+                                sea devuelto correctamente.
+                            </p>
+                        </div>
+                    </details>
+                    <br>
+                    <details class="rounded-md bg-white">
+                        <summary class="text-2xl"><i class="bi bi-award icon-questions"></i> Garantía
+                            y Productos Defectuosos</summary>
+                        <br>
+                        <div class="flex flex-col">
+                            <p class="note-questions">Si tu producto presenta algún defecto o deseas hacer uso de la
+                                garantía, puedes gestionarlo de manera rápida y sencilla desde nuestra página web. Solo
+                                debes seleccionar la opción “Producto Defectuoso / Garantía”, hacer clic en el botón
+                                “Reportar Incidencia”, completar el formulario con tus datos y describir el problema que
+                                presenta el producto. Una vez enviado, recibirás un correo de confirmación con todos los
+                                detalles y los pasos a seguir para que podamos evaluar, reparar o reemplazar tu producto
+                                de manera correcta y sin inconvenientes.
+                            </p>
+                        </div>
+                    </details>
+                </div>
+            </div>
+            <br>
+            <br>
+
+
+
+
+            <div class="testimonials-container">
+                <h2 class="section-title text-2xl">Lo que dicen nuestros clientes</h2>
+                <br>
+                <p>Descubre lo que dicen quienes ya confiaron en nosotros. No hay mejor garantía que la voz de nuestros
+                    clientes: sus experiencias, logros y satisfacción son el reflejo de nuestro compromiso. Conoce sus
+                    testimonios y convéncete de por qué somos la elección preferida.</p>
+                <br>
+
+                <div class="slider-wrapper">
+                    <div class="slider-track">
+                        <!-- Testimonio 1 -->
+                        <div class="testimonial-card">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80"
+                                alt="María González" class="user-image">
+                            <h3 class="user-name">María González</h3>
+                            <p class="user-position">Directora de Marketing</p>
+                            <p class="testimonial-text">"El servicio recibido superó todas mis expectativas. El equipo
+                                fue profesional, atento y los resultados fueron excelentes. Definitivamente recomendaría
+                                sus servicios."</p>
+                            <div class="rating">★★★★★</div>
+                        </div>
+
+                        <!-- Testimonio 2 -->
+                        <div class="testimonial-card">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                                alt="Carlos Rodríguez" class="user-image">
+                            <h3 class="user-name">Carlos Rodríguez</h3>
+                            <p class="user-position">Emprendedor</p>
+                            <p class="testimonial-text">"El bolso superó mis expectativas, la piel se siente de
+                                excelente calidad y los acabados son impecables. Llegó en un empaque muy cuidado, lo que
+                                demuestra la atención al detalle."</p>
+                            <div class="rating">★★★★☆</div>
+                        </div>
+
+                        <!-- Testimonio 3 -->
+                        <div class="testimonial-card">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                                alt="Laura Martínez" class="user-image">
+                            <h3 class="user-name">Laura Martínez</h3>
+                            <p class="user-position">Gerente de Proyectos</p>
+                            <p class="testimonial-text">"Hice el pedido un lunes y el miércoles ya lo tenía en casa. El
+                                envío fue rapidísimo y el bolso es idéntico a las fotos de la web. Me encantó que
+                                incluyeran una funda protectora"</p>
+                            <div class="rating">★★★★★</div>
+                        </div>
+
+                        <!-- Testimonio 4 -->
+                        <div class="testimonial-card">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                                alt="Javier López" class="user-image">
+                            <h3 class="user-name">Juan López</h3>
+                            <p class="user-position">CEO de TechSolutions</p>
+                            <p class="testimonial-text">"Tuve una duda sobre el tamaño del bolso y el servicio de
+                                atención al cliente me respondió en menos de una hora. Me ayudaron a elegir el modelo
+                                perfecto para mí esposa. Excelente experiencia de compra."
+                            </p>
+                            <div class="rating">★★★★★</div>
+                        </div>
+
+                        <!-- Testimonio 5 -->
+                        <div class="testimonial-card">
+                            <img src="https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                                alt="Ana Silva" class="user-image">
+                            <h3 class="user-name">Ana Silva</h3>
+                            <p class="user-position">Diseñadora UX/UI</p>
+                            <p class="testimonial-text">"El bolso es precioso, muy elegante y ligero. Lo uso todos los
+                                días y sigue como nuevo. Además, me encantó que me avisaran en cada etapa del envío, muy
+                                profesionales"
+                            </p>
+                            <div class="rating">★★★★☆</div>
+                        </div>
+
+                        <!-- Testimonio 6 -->
+                        <div class="testimonial-card">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                                alt="Roberto Fernández" class="user-image">
+                            <h3 class="user-name">Roberto Fernández</h3>
+                            <p class="user-position">Consultor Financiero</p>
+                            <p class="testimonial-text">"El diseño es único, mi esposa recibio varios cumplidos desde el primer día
+                                que lo lleva puesto. El proceso de compra fue sencillo y seguro. Sin duda recomendaría esta
+                                tienda."
+                            </p>
+                            <div class="rating">★★★★★</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slider-controls">
+                    <button class="slider-btn prev-btn"><i class="bi bi-arrow-left-short"></i></button>
+                    <button class="slider-btn next-btn"><i class="bi bi-arrow-right-short"></i></button>
+                </div>
+            </div>
+            <br>
+        </div>
+
+
+        <!-- seccion contacto -->
+        <div id="contact_section" class="
+            max-w-[800px]
+            p-[20] mx-2 my-4 sm:m-auto
+            box-border
+            hidden">
+            <br>
+            <h1 class="text-center text-4xl">Contacto</h1>
+            <br>
+            <h2 class="text-center text-xl sm:text-2xl">Si tienes alguna pregunta, no dudes en contactarnos</h2>
+            <br>
+            <div class="text-center">
+                <p> Tel: 914-123-456 | info@misitio.com</p>
+            </div>
+            <br>
+            <form action="procesar_formulario.php" method="post">
+
+                <!-- Nombre -->
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre y Apellido" required><br><br>
+
+                <!-- Correo -->
+                <label for="email">Correo electrónico:</label><br>
+                <input type="email" id="email" name="email" placeholder="Email" required><br><br>
+
+                <!-- Asunto -->
+                <label for="asunto">Asunto:</label><br>
+                <input type="text" id="asunto" name="asunto" placeholder="opcional" required><br><br>
+
+                <!-- Mensaje -->
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="5" cols="30" placeholder="dejanos un mensaje..."
+                    required></textarea><br><br>
+
+                <!-- Botón de envío -->
+                <button type="submit"><i class="bi bi-send-fill"></i> Enviar</button>
+            </form>
+            <br>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- about -->
+    <section id="about_section" class="
+    about-section
+    py-[100px] sm:py-[200px] px-2">
+        <div class="
+        w-full sm:max-w-[800px]
+        m-auto
+        text-center sm:text-start">
+            <h1 class="text-2xl sm:text-4xl">Sobre nosotros</h1>
+            <br>
+            <p>En Bilba creemos que un bolso no es solo un accesorio, sino una extensión de la personalidad y el
+                estilo de cada mujer. Nos apasiona ofrecer piezas únicas que combinan elegancia, calidad y diseño
+                atemporal.
+                <br><br>
+                pensadas para acompañarte en cada momento especial de tu vida. Trabajamos cuidadosamente en la selección
+                de
+                materiales y detalles para que cada bolso transmita sofisticación y distinción, convirtiéndose en el
+                complemento perfecto para realzar tu look con un toque de clase.
+            </p>
+        </div>
+    </section>
+
+
+
+
+
+    <footer class="
+    p-[50px]">
+        <br>
+        <div class="
+        w-full sm:max-w-[800px]
+        m-auto">
+            <div class="
+            flex flex-col sm:flex-row 
+            justify-between gap-4
+            text-center sm:text-start">
+                <div>
+                    <p>Envío y devoluciones</p>
+                    <p>Políticas de la tienda</p>
+                    <p>Métodos de pago</p>
+                </div>
+
+                <div>
+                    <p>Contacto</p>
+                    <p>Tel: 914-123-456</p>
+                    <p>info@misitio.com</p>
+                </div>
+
+                <div>
+                    <p>Facebook</p>
+                    <p>Instagram</p>
+                    <p>Pinterest</p>
+                </div>
+            </div>
+            <br>
+            <p class="text-2xl">Suscríbete para no perderte nuestras ofertas</p>
+            <br>
+            <label for="">
+                <p>Email</p>
+                <div class="flex gap-4">
+                    <input class="
+                    sm:w-full
+                    border-b-2 border-white" type="text" placeholder="ingrese su Email">
+                    <button class="
+                    buttom-Email">Unirse</button>
+                </div>
+            </label>
+        </div>
+        <br>
+    </footer>
+
+
+
+    <!-- Menú Mobile -->
+    <nav class="menu" id="menu">
+        <br>
+        <br>
+        <button class="close-btn" onclick="cerrarMenu()">✖</button>
+        <button id="home_mobile" onclick="changeSections(products_section); cerrarMenu()" class="nav">Tienda</button>
+        <button id="about_mobile" onclick="scrollBoton('#about_section'); cerrarMenu()" class="nav">Acerca</button>
+        <button id="faq_mobile" onclick="changeSections(questions_section); cerrarMenu()" class="nav">FAQ</button>
+        <button id="contact_mobile" onclick="changeSections(contact_section); cerrarMenu()"
+            class="nav">Contacto</button>
+
+        <a class="text-center" href="./login.html" target="_blank">Iniciar Sesion</a>
+    </nav>
+    <!-- script mobile -->
+    <script>
+        const menu = document.getElementById('menu');
+
+        function abrirMenu() {
+            menu.classList.add('open');
+        }
+
+        function cerrarMenu() {
+            menu.classList.remove('open');
+        }
+    </script>
+
+
+    <!-- scripts local -->
+    <script src="./src/scripts/change-quiestions.js"></script>
+    <script src="./src/scripts/change-sections.js"></script>
+    <script src="./src/scripts/scroll-animation.js"></script>
+    <script src="./src/scripts/slider-faq.js"></script>
+</body>
+
+</html>

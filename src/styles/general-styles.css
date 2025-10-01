@@ -1,0 +1,96 @@
+/* colores */
+body {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+header,
+.about-section {
+    background-color: #fff;
+}
+
+footer {
+    background-color: #0F0E0E;
+    color: #fff;
+}
+
+.buttom-Email,
+.buttom-faq {
+    background-color: #fff;
+    color: #0F0E0E;
+}
+
+.icon-questions {
+    margin-right: 10px;
+    color: #3498db;
+}
+
+
+button,
+.nav,
+details {
+    cursor: pointer;
+    padding: 10px;
+}
+
+.buttom-faq {
+    transition: all 0.3s;
+}
+
+/* Quitar la flecha en Firefox */
+details summary {
+    list-style: none;
+}
+
+details:hover,
+.buttom-faq:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+
+/* testo */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header,
+summary,
+h1,
+.buttom-faq {
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.note-questions {
+    color: #7f8c8d;
+}
+
+#container_section,
+#container_questions_section {
+    transition: 0.3s;
+}
+
+
+
+
+
+/* fomrulario */
+form {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    background-color: #f0f0f0;
+}
+
+form button {
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 5px;
+}
