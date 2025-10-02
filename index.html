@@ -68,6 +68,9 @@
         <div id="products_section" class="
         contenedor-galeria">
             <br>
+            <h1 class="text-center text-3xl font-black">Comprá online y llevá estilo, comodidad y diseño a donde vayas.</h1>
+            <br>
+            <br>
             <div class="sm:flex sm:justify-between">
                 <h1 class="text-2xl">Nuestros Bolsos</h1>
                 <br class="sm:hidden">
@@ -503,26 +506,13 @@
         <br>
         <br>
         <button class="close-btn" onclick="cerrarMenu()">✖</button>
-        <button id="home_mobile" onclick="changeSections(products_section); cerrarMenu()" class="nav">Tienda</button>
+        <button id="home_mobile" onclick="changeSections(products_section); cerrarMenu(); scrollInicio()" class="nav">Tienda</button>
         <button id="about_mobile" onclick="scrollBoton('#about_section'); cerrarMenu()" class="nav">Acerca</button>
-        <button id="faq_mobile" onclick="changeSections(questions_section); cerrarMenu()" class="nav">FAQ</button>
-        <button id="contact_mobile" onclick="changeSections(contact_section); cerrarMenu()"
-            class="nav">Contacto</button>
+        <button id="faq_mobile" onclick="changeSections(questions_section); cerrarMenu(); scrollInicio()" class="nav">FAQ</button>
+        <button id="contact_mobile" onclick="changeSections(contact_section); cerrarMenu(); scrollInicio()" class="nav">Contacto</button>
 
         <a class="text-center" href="./login.html" target="_blank">Iniciar Sesion</a>
     </nav>
-    <!-- script mobile -->
-    <script>
-        const menu = document.getElementById('menu');
-
-        function abrirMenu() {
-            menu.classList.add('open');
-        }
-
-        function cerrarMenu() {
-            menu.classList.remove('open');
-        }
-    </script>
 
 
     <!-- scripts local -->
@@ -530,6 +520,7 @@
     <script src="./src/scripts/change-sections.js"></script>
     <script src="./src/scripts/scroll-animation.js"></script>
     <script src="./src/scripts/slider-faq.js"></script>
+    <script src="./src/scripts/menu-mobile.js"></script>
 </body>
 
 </html>
