@@ -12,6 +12,7 @@ const about_button_mobile = document.getElementById("faq_mobile");
 
 // secciones
 const container_section = document.getElementById("container_section");
+const home_section = document.getElementById("home_section");
 const products = document.getElementById("products_section");
 const questions_section = document.getElementById("questions_section");
 const contact_section = document.getElementById("contact_section");
@@ -37,6 +38,7 @@ function changeSections(buttonSelected) {
     setTimeout(() => {
         // se ocultan todas las secciones
         products.classList.add("hidden");
+        home_section.classList.add("hidden");
         questions_section.classList.add("hidden");
         contact_section.classList.add("hidden");
         // se visibiliza la seccion seleccionada

@@ -14,7 +14,8 @@ footer {
 }
 
 .buttom-Email,
-.buttom-faq {
+.buttom-faq,
+.button-home {
     background-color: #fff;
     color: #0F0E0E;
 }
@@ -32,8 +33,13 @@ details {
     padding: 10px;
 }
 
-.buttom-faq {
+.buttom-faq,
+.button-home {
     transition: all 0.3s;
+}
+
+.button-home:hover {
+    transform: scale(1.05);
 }
 
 /* Quitar la flecha en Firefox */
