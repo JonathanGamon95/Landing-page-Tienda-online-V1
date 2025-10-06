@@ -62,7 +62,8 @@ h1,
 =========================== */
 button,
 .nav,
-details {
+details,
+.producto {
     cursor: pointer;
     padding: 10px;
 }

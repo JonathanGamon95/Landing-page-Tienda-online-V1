@@ -9,10 +9,17 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
     <!-- css local -->
+    <!-- estilos productos -->
     <link rel="stylesheet" href="./src/styles/gallery-products.css">
+    <!-- estilos generales -->
     <link rel="stylesheet" href="./src/styles/general-styles.css">
+    <!-- estilos menu mobile-->
     <link rel="stylesheet" href="./src/styles/menu-mobile.css">
+    <!-- estilos carrucel slider -->
     <link rel="stylesheet" href="./src/styles/slider-style.css">
+    <!-- estilos modal -->
+    <link rel="stylesheet" href="./src/styles/modal-products.css">
+
 
     <!-- animacion fade-in -->
     <link rel="stylesheet" href="./src/styles/fade-in-animation.css">
@@ -91,17 +98,23 @@
                 text-2xl">Diseños sobrios, materiales nobles, y una estética que trasciende tendencias.</h2>
                 <br>
                 <br>
-                <div class="text-center sm:text-start">
-                    <button class="button-home">Ver Porductos</button>
+                <div data-delay="0.6s" class="
+                animar desde-izquierda
+                text-center sm:text-start">
+                    <button onclick="changeSections(products_section)" class="button-home">Ver Porductos</button>
                 </div>
                 <br>
-                <p class="text-center sm:text-start">© 2025 Jonathan Gamon. Todos los derechos reservados.</p>
+                <p data-delay="0.6s" class="
+                animar desde-izquierda
+                text-center sm:text-start">© 2025 Jonathan Gamon. Todos los derechos reservados.</p>
             </div>
 
             <img data-delay="0.3s" class="
             animar desde-arriba  
             w-full h-[400px]
-            sm:w-[90%] sm:h-[90%] object-cover" src="./src/assest/imagen/home/retrato-hermosa-modelo-mujer-morena-linda-sonriente-ropa-casual-verano-maquillaje-aislado-gris_158538-14853.jpg"  alt="">
+            sm:w-[90%] sm:h-[90%] object-cover"
+                src="./src/assest/imagen/home/retrato-hermosa-modelo-mujer-morena-linda-sonriente-ropa-casual-verano-maquillaje-aislado-gris_158538-14853.jpg"
+                alt="">
         </div>
 
         <!-- productos -->
@@ -109,7 +122,8 @@
         contenedor-galeria
         hidden">
             <br>
-            <h1 class="text-center text-3xl font-black">Comprá online y llevá estilo, comodidad y diseño a donde vayas.</h1>
+            <h1 class="text-center text-3xl font-black">Comprá online y llevá estilo, comodidad y diseño a donde vayas.
+            </h1>
             <br>
             <br>
             <div class="sm:flex sm:justify-between">
@@ -124,7 +138,7 @@
             <div class="galeria">
 
                 <!-- Producto 1 -->
-                <div class="producto">
+                <div id="producto_1" onclick="abrirModal(producto_1)" class="producto">
                     <img src="./src/assest/imagen/products/51y-mpUpMkL._AC_SY575_.jpg" alt="Producto 1">
                     <div class="info">
                         <h3>Bolsos de lujo para mujer</h3>
@@ -135,7 +149,7 @@
                 </div>
 
                 <!-- Producto 2 -->
-                <div class="producto">
+                <div id="producto_2" onclick="abrirModal(producto_2)" class="producto">
                     <img src="./src/assest/imagen/products/61IA2D4uSbL._AC_SY575_.jpg" alt="Producto 2">
                     <div class="info">
                         <h3>Bolsos de lujo para mujer</h3>
@@ -146,7 +160,7 @@
                 </div>
 
                 <!-- Producto 3 -->
-                <div class="producto">
+                <div id="producto_3" onclick="abrirModal(producto_3)" class="producto">
                     <img src="./src/assest/imagen/products/81irZKcYLvL._AC_SY575_.jpg" alt="Producto 3">
                     <div class="info">
                         <h3>Bolsos de lujo para mujer</h3>
@@ -157,7 +171,7 @@
                 </div>
 
                 <!-- Producto 4 -->
-                <div class="producto">
+                <div id="producto_4" onclick="abrirModal(producto_4)" class="producto">
                     <img src="./src/assest/imagen/products/51y-mpUpMkL._AC_SY575_.jpg" alt="Producto 4">
                     <div class="info">
                         <h3>Bolsos de lujo para mujer</h3>
@@ -171,46 +185,46 @@
 
 
                 <!-- Producto 5 -->
-                <div class="producto">
+                <div id="producto_5" onclick="abrirModal(producto_5)" class="producto">
                     <img src="./src/assest/imagen/products/51y-mpUpMkL._AC_SY575_.jpg" alt="Producto 5">
                     <div class="info">
                         <h3>Bolsos de lujo para mujer</h3>
                         <p>bolsas de gran capacidad, textura premium de cuero sólido, bolsos elegantes de mensajero para
                             mujer</p>
-                        <span class="precio">$25.00</span>
+                        <span class="precio">$28.00</span>
                     </div>
                 </div>
 
                 <!-- Producto 6 -->
-                <div class="producto">
+                <div id="producto_6" onclick="abrirModal(producto_6)" class="producto">
                     <img src="./src/assest/imagen/products/61IA2D4uSbL._AC_SY575_.jpg" alt="Producto 6">
                     <div class="info">
                         <h3>Bolsos de lujo para mujer</h3>
                         <p>bolsas de gran capacidad, textura premium de cuero sólido, bolsos elegantes de mensajero para
                             mujer</p>
-                        <span class="precio">$40.00</span>
+                        <span class="precio">$45.00</span>
                     </div>
                 </div>
 
                 <!-- Producto 7 -->
-                <div class="producto">
+                <div id="producto_7" onclick="abrirModal(producto_7)" class="producto">
                     <img src="./src/assest/imagen/products/81irZKcYLvL._AC_SY575_.jpg" alt="Producto 7">
                     <div class="info">
                         <h3>Bolsos de lujo para mujer</h3>
                         <p>bolsas de gran capacidad, textura premium de cuero sólido, bolsos elegantes de mensajero para
                             mujer</p>
-                        <span class="precio">$30.00</span>
+                        <span class="precio">$20.00</span>
                     </div>
                 </div>
 
                 <!-- Producto 8 -->
-                <div class="producto">
+                <div id="producto_8" onclick="abrirModal(producto_8)" class="producto">
                     <img src="./src/assest/imagen/products/51y-mpUpMkL._AC_SY575_.jpg" alt="Producto 8">
                     <div class="info">
                         <h3>Bolsos de lujo para mujer</h3>
                         <p>bolsas de gran capacidad, textura premium de cuero sólido, bolsos elegantes de mensajero para
                             mujer</p>
-                        <span class="precio">$55.00</span>
+                        <span class="precio">$36.00</span>
                     </div>
                 </div>
             </div>
@@ -558,7 +572,7 @@
         <button class="close-btn" onclick="cerrarMenu()">✖</button>
         <button id="home_mobile" onclick="changeSections(home_section); cerrarMenu(); scrollInicio()"
             class="nav">Inicio</button>
-            <button id="faq_mobile" onclick="changeSections(products_section); cerrarMenu(); scrollInicio()"
+        <button id="faq_mobile" onclick="changeSections(products_section); cerrarMenu(); scrollInicio()"
             class="nav">Tienda</button>
         <button id="about_mobile" onclick="scrollBoton('#about_section'); cerrarMenu()" class="nav">Acerca</button>
         <button id="faq_mobile" onclick="changeSections(questions_section); cerrarMenu(); scrollInicio()"
@@ -570,14 +584,41 @@
     </nav>
 
 
+
+    <!-- ventana Modal -->
+    <div class="modal-overlay">
+        <button class="modal-cerrar">&times;</button>
+        <div class="modal-contenido">
+            <div class="modal-cuerpo">
+                <div class="modal-imagen">
+                    <img id="img_modal" src="https://via.placeholder.com/500x400" alt="Producto">
+                </div>
+                <div class="modal-info">
+                    <div>
+                        <h2 id="modal_titulo" class="modal-titulo">Cámara Digital Profesional</h2>
+                        <p id="modal_precio" class="modal-precio">$599.99</p>
+                        <p id="modal_descripcion" class="modal-descripcion">Cámara digital profesional con sensor de 24MP, grabación de video
+                            4K y lente intercambiable. Perfecta para fotógrafos aficionados y profesionales.</p>
+                    </div>
+                    <div class="botones-container">
+                        <button class="boton-carrito">Agregar al Carrito</button>
+                        <button class="boton-comprar">Comprar Ahora</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
     <!-- scripts local -->
     <script src="./src/scripts/change-quiestions.js"></script>
     <script src="./src/scripts/change-sections.js"></script>
     <script src="./src/scripts/scroll-animation.js"></script>
     <script src="./src/scripts/slider-faq.js"></script>
     <script src="./src/scripts/menu-mobile.js"></script>
-    <!-- fade-in animation -->
     <script src="./src/scripts/fade-in-animation.js"></script>
+    <script src="./src/scripts/modal-products.js"></script>
 </body>
 
 </html>
