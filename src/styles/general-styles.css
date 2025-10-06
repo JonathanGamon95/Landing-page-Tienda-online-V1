@@ -1,10 +1,13 @@
-/* colores */
+/* ===========================
+   🎨 COLORES Y FONDOS
+=========================== */
 body {
     background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
 }
 
 header,
-.about-section {
+.about-section,
+form {
     background-color: #fff;
 }
 
@@ -14,47 +17,35 @@ footer {
 }
 
 .buttom-Email,
-.buttom-faq,
-.button-home {
+.buttom-faq {
     background-color: #fff;
     color: #0F0E0E;
 }
 
+form button,
+.button-home {
+    background-color: #3498db;
+    color: #fff;
+}
+
 .icon-questions {
-    margin-right: 10px;
     color: #3498db;
 }
 
-
-button,
-.nav,
-details {
-    cursor: pointer;
-    padding: 10px;
+header,
+summary,
+h1,
+.buttom-faq {
+    color: #2c3e50;
 }
 
-.buttom-faq,
-.button-home {
-    transition: all 0.3s;
+.note-questions {
+    color: #7f8c8d;
 }
 
-.button-home:hover {
-    transform: scale(1.05);
-}
-
-/* Quitar la flecha en Firefox */
-details summary {
-    list-style: none;
-}
-
-details:hover,
-.buttom-faq:hover {
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-}
-
-
-
-/* testo */
+/* ===========================
+   ✍️ TIPOGRAFÍA
+=========================== */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -64,30 +55,50 @@ summary,
 h1,
 .buttom-faq {
     font-weight: 600;
-    color: #2c3e50;
 }
 
-.note-questions {
-    color: #7f8c8d;
+/* ===========================
+   🧱 LAYOUT Y ESPACIADO
+=========================== */
+button,
+.nav,
+details {
+    cursor: pointer;
+    padding: 10px;
 }
 
-#container_section,
-#container_questions_section {
-    transition: 0.3s;
+.icon-questions {
+    margin-right: 10px;
 }
 
-
-
-
-
-/* fomrulario */
 form {
     padding: 20px;
-    background-color: #fff;
     border-radius: 10px;
+}
+
+/* ===========================
+   🌟 EFECTOS Y TRANSICIONES
+=========================== */
+.buttom-faq,
+.button-home,
+#container_section,
+#container_questions_section {
+    transition: all 0.3s;
+}
+
+.button-home:hover {
+    transform: scale(1.05);
+}
+
+details:hover,
+.buttom-faq:hover,
+form {
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
+/* ===========================
+   🧩 FORMULARIO
+=========================== */
 form input,
 form textarea {
     width: 100%;
@@ -95,8 +106,15 @@ form textarea {
     background-color: #f0f0f0;
 }
 
-form button {
-    background-color: #3498db;
-    color: #fff;
+form button,
+.button-home {
     border-radius: 5px;
+}
+
+/* ===========================
+   ⚙️ DETALLES Y AJUSTES
+=========================== */
+/* Quitar la flecha en Firefox */
+details summary {
+    list-style: none;
 }

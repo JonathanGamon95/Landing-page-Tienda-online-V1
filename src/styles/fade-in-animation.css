@@ -1,0 +1,16 @@
+.animar {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.animar.visible {
+  opacity: 1;
+  transform: translate(0);
+}
+
+/* Direcciones posibles */
+.desde-abajo { transform: translateY(50px); }
+.desde-arriba { transform: translateY(-50px); }
+.desde-izquierda { transform: translateX(-50px); }
+.desde-derecha { transform: translateX(50px); }

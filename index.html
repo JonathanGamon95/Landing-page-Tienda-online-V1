@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="./src/styles/general-styles.css">
     <link rel="stylesheet" href="./src/styles/menu-mobile.css">
     <link rel="stylesheet" href="./src/styles/slider-style.css">
+
+    <!-- animacion fade-in -->
+    <link rel="stylesheet" href="./src/styles/fade-in-animation.css">
     <title>Bilba</title>
 </head>
 
@@ -77,11 +80,13 @@
             <div class="">
                 <br>
                 <br>
-                <h1 class="
+                <h1 data-delay="0.3s" class="
+                animar desde-izquierda 
                 text-center sm:text-start
                 text-3xl sm:text-5xl">Menos es más. Elegancia en su forma más pura.</h1>
                 <br>
-                <h2 class="
+                <h2 data-delay="0.6s" class="
+                animar desde-izquierda
                 text-center sm:text-start
                 text-2xl">Diseños sobrios, materiales nobles, y una estética que trasciende tendencias.</h2>
                 <br>
@@ -90,10 +95,11 @@
                     <button class="button-home">Ver Porductos</button>
                 </div>
                 <br>
-                <p>© 2025 Jonathan Gamon. Todos los derechos reservados.</p>
+                <p class="text-center sm:text-start">© 2025 Jonathan Gamon. Todos los derechos reservados.</p>
             </div>
 
-            <img class="
+            <img data-delay="0.3s" class="
+            animar desde-arriba  
             w-full h-[400px]
             sm:w-[90%] sm:h-[90%] object-cover" src="./src/assest/imagen/home/retrato-hermosa-modelo-mujer-morena-linda-sonriente-ropa-casual-verano-maquillaje-aislado-gris_158538-14853.jpg"  alt="">
         </div>
@@ -475,7 +481,8 @@
     <section id="about_section" class="
     about-section
     py-[100px] sm:py-[200px] px-2">
-        <div class="
+        <div data-delay="0.3s" class="
+        animar desde-abajo
         w-full sm:max-w-[800px]
         m-auto
         text-center sm:text-start">
@@ -569,6 +576,8 @@
     <script src="./src/scripts/scroll-animation.js"></script>
     <script src="./src/scripts/slider-faq.js"></script>
     <script src="./src/scripts/menu-mobile.js"></script>
+    <!-- fade-in animation -->
+    <script src="./src/scripts/fade-in-animation.js"></script>
 </body>
 
 </html>
