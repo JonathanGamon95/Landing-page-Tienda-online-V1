@@ -21,9 +21,6 @@
 
 .modal-contenido {
     background-color: white;
-    width: 90%;
-    max-width: 800px;
-    border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     transform: scale(0.9);
@@ -38,18 +35,10 @@
     position: absolute;
     top: 15px;
     right: 15px;
-    background: none;
-    border: none;
     font-size: 24px;
-    color: red;
+    color: #4a6ee0;
     cursor: pointer;
     z-index: 1001;
-    font-weight: 800;
-}
-
-.modal-cuerpo {
-    display: flex;
-    flex-direction: row;
 }
 
 .modal-imagen {
@@ -59,12 +48,6 @@
     justify-content: center;
     align-items: center;
     padding: 20px;
-}
-
-.modal-imagen img {
-    max-width: 100%;
-    max-height: 400px;
-    object-fit: contain;
 }
 
 .modal-info {
@@ -131,10 +114,6 @@
 }
 
 @media (max-width: 768px) {
-    .modal-cuerpo {
-        flex-direction: column;
-    }
-
     .modal-imagen {
         padding: 15px;
     }
