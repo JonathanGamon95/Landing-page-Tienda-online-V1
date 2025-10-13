@@ -65,7 +65,7 @@
 }
 
 .modal-precio {
-    font-size: 20px;
+    font-size: 40px;
     font-weight: bold;
     color: #4a6ee0;
     margin-bottom: 20px;
@@ -120,5 +120,42 @@
 
     .modal-info {
         padding: 20px;
+    }
+}
+
+
+
+
+
+/* scroll */
+.scrollBar {
+    overflow-y: scroll;
+    /* Asegura que el scroll esté activado */
+    max-height: 100%;
+    /* Ajusta según tus necesidades */
+
+    /* --sb-track-color: #232e33;
+    --sb-thumb-color: #6BAF8D; */
+    --sb-size: 8px;
+    /* Cambié a 8px porque 1px es casi invisible, puedes ajustar */
+}
+
+.scrollBar::-webkit-scrollbar {
+    width: var(--sb-size);
+}
+
+.scrollBar::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 3px;
+}
+
+.scrollBar::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 3px;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+    .scrollBar {
+        scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
     }
 }
