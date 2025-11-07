@@ -14,3 +14,15 @@
 .desde-arriba { transform: translateY(-50px); }
 .desde-izquierda { transform: translateX(-50px); }
 .desde-derecha { transform: translateX(50px); }
+.desde-centro { 
+  transform: scale(0.99);
+}
+
+
+/* se desactiva las animaciones en mobile */
+/* @media (max-width: 480px) {
+  .animar {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+} */

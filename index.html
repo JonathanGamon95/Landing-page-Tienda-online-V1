@@ -73,48 +73,72 @@
 
     <!-- contenedor padre -->
     <section id="container_section" class="
-    min-h-[100vh]">
-        <br><br><br>
-        <br class="hidden sm:block">
-        <br class="hidden sm:block">
-
+    min-h-[100vh] pt-[80px]">
+        
         <!-- home -->
         <div id="home_section" class="
         home
         sm:max-w-[1200px] sm:h-[800px] p-2
         grid sm:grid-cols-[400px_1fr] sm:grid-rows-1 gap-4
         m-auto">
-            <div class="">
-                <br>
-                <br>
+            <div class="
+            home-titles-contents
+            sm:m-auto">
+                <br class="sm:hidden">
+                <br class="sm:hidden">
+                <p data-delay="0.3s" class="animar desde-centro">coleccion otoño 2025</p>
                 <h1 data-delay="0.3s" class="
-                animar desde-izquierda 
-                text-center sm:text-start
+                animar desde-centro 
                 text-3xl sm:text-5xl">Menos es más. Elegancia en su forma más pura.</h1>
                 <br>
-                <h2 data-delay="0.6s" class="
-                animar desde-izquierda
-                text-center sm:text-start
-                text-2xl">Diseños sobrios, materiales nobles, y una estética que trasciende tendencias.</h2>
+                <h2 data-delay="0.5s" class="
+                animar desde-centro">Diseños sobrios, materiales nobles, y una estética que trasciende tendencias.</h2>
                 <br>
                 <br>
-                <div data-delay="0.6s" class="
-                animar desde-izquierda
+                <div data-delay="0.7s" class="
+                animar desde-centro
                 text-center sm:text-start">
-                    <button onclick="changeSections(products_section)" class="button-home">Ver Porductos</button>
+                    <button onclick="changeSections(products_section)" class="button-home">Ver Productos</button>
+                    <button class="button-home offers">Ver Ofertas</button>
                 </div>
                 <br>
-                <p data-delay="0.6s" class="
-                animar desde-izquierda
+                <p data-delay="0.9s" class="
+                animar desde-centro
                 text-center sm:text-start">© 2025 Jonathan Gamon. Todos los derechos reservados.</p>
             </div>
 
-            <img data-delay="0.3s" class="
-            animar desde-arriba  
-            w-full h-[400px]
-            sm:w-[90%] sm:h-[90%] object-cover"
-                src="./src/assest/imagen/home/retrato-hermosa-modelo-mujer-morena-linda-sonriente-ropa-casual-verano-maquillaje-aislado-gris_158538-14853.jpg"
-                alt="">
+            <!-- Carrusel Integrado -->
+            <div class="
+            gallery-container
+            animar desde-centro
+            w-full h-[300px] sm:h-full">
+                <!-- Slide 1 -->
+                <div class="gallery-slide active">
+                    <img src="https://www.kikkiline.it/cdn/shop/files/IMG_7571.jpg?v=1712505466"
+                        alt="Colección Otoño 2025" class="w-full h-full object-cover">
+                    <div class="image-text">Colección Otoño 2025 - Elegancia Atemporal</div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="gallery-slide">
+                    <img src="https://sinocultural.com/cdn/shop/files/Embroidery_Leather_Magnolia_Leather_Tote_Bag_-_SinoCultural-2474062.jpg?v=1755589449&width=800"
+                        alt="Diseños Sobrios" class="w-full h-full object-cover">
+                    <div class="image-text">Diseños Elegantes - Materiales Nobles</div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="gallery-slide">
+                    <img src="https://www.kikkiline.it/cdn/shop/files/IMG_2691_812e7b50-82ca-4d3d-a2d3-c00eaa0411f1.jpg?v=1761666188"
+                        alt="Estética Pura" class="w-full h-full object-cover">
+                    <div class="image-text">Estética que Trasciende Tendencias</div>
+                </div>
+
+                <!-- Controles -->
+                <div class="gallery-controls">
+                    <button class="control-btn prev-btn"><i class="bi bi-arrow-left-circle-fill"></i></button>
+                    <button class="control-btn next-btn"><i class="bi bi-arrow-right-circle-fill"></i></button>
+                </div>
+            </div>
         </div>
 
         <!-- productos -->
@@ -501,8 +525,7 @@
         <div data-delay="0.3s" class="
         animar desde-abajo
         w-full sm:max-w-[800px]
-        m-auto
-        text-center sm:text-start">
+        m-auto">
             <h1 class="text-2xl sm:text-4xl">Sobre nosotros</h1>
             <br>
             <p>En Bilba creemos que un bolso no es solo un accesorio, sino una extensión de la personalidad y el
@@ -529,8 +552,7 @@
         m-auto">
             <div class="
             flex flex-col sm:flex-row 
-            justify-between gap-4
-            text-center sm:text-start">
+            justify-between gap-4">
                 <div>
                     <p>Envío y devoluciones</p>
                     <p>Políticas de la tienda</p>
@@ -643,6 +665,7 @@
     <script src="./src/scripts/menu-mobile.js"></script>
     <script src="./src/scripts/fade-in-animation.js"></script>
     <script src="./src/scripts/modal-products.js"></script>
+    <script src="./src/scripts/hero-imagens-slider.js"></script>
 </body>
 
 </html>
