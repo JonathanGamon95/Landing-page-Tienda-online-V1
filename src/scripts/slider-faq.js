@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
             const track = document.querySelector('.slider-track');
             const cards = document.querySelectorAll('.testimonial-card');
-            const prevBtn = document.querySelector('.prev-btn');
-            const nextBtn = document.querySelector('.next-btn');
+            const prevBtn = document.querySelector('.prev-btn-faq');
+            const nextBtn = document.querySelector('.next-btn-faq');
             const indicatorsContainer = document.querySelector('.slider-indicators');
             
             let currentIndex = 0;
