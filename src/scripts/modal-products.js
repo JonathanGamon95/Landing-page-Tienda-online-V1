@@ -12,7 +12,7 @@ const botonCerrar = document.querySelector('.modal-cerrar');
 // abrir modal
 const abrirModal = (producto) => {
     // datos obtenidos
-    const imagen = producto.children[0].getAttribute("src");
+    const imagen = producto.children[0].children[0].getAttribute("src");
     const titulo = producto.children[1].children[0].textContent;
     const detalles = producto.children[1].children[1].textContent;
     const precio = producto.children[1].children[2].textContent;
