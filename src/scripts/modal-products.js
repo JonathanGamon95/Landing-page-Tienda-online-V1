@@ -15,7 +15,7 @@ const abrirModal = (producto) => {
     const imagen = producto.children[0].children[0].getAttribute("src");
     const titulo = producto.children[1].children[0].textContent;
     const detalles = producto.children[1].children[1].textContent;
-    const precio = producto.children[1].children[2].textContent;
+    const precio = producto.children[1].children[2].nextSibling.nextSibling.textContent;
 
     // datos aplicados al modal
     img_modal.setAttribute("src", imagen);
