@@ -22,7 +22,7 @@
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease-in-out;
     display: grid;
-    grid-template-rows: 1fr auto;
+    grid-template-rows: 250px auto;
 }
 
 .producto:hover {
@@ -37,6 +37,7 @@
 
 .info {
     padding: 15px;
+    position: relative;
 }
 
 .info h3 {
@@ -55,19 +56,13 @@
     font-size: 1.2rem;
     font-weight: bold;
     color: #e63946;
+    position: absolute; bottom: 0;
 }
 
 /* ===== Responsividad extra ===== */
 @media (max-width: 768px) {
-    .info h3 {
-        font-size: 1rem;
-    }
-
-    .info p {
-        font-size: 0.85rem;
-    }
-
-    .precio {
-        font-size: 1.1rem;
-    }
+    .info h3 {font-size: 1rem;}
+    .info p {font-size: 0.85rem;}
+    .precio {font-size: 1.1rem;}
+    .producto {grid-template-rows: 350px auto;}
 }
